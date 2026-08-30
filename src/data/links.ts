@@ -15,7 +15,7 @@ export const links: FriendLink[] = [
 	{
 		name: '四季折雨',
 		kind: 'github',
-		github: 'Dancncn',
+		github: 'yizhimao213',
 		url: 'https://github.com/yizhimao213',
 		bilibili: 'https://space.bilibili.com/212458030',
 		description:
