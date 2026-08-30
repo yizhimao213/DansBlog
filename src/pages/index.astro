@@ -18,13 +18,13 @@ const posts = (await getCollection('blog'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 6);
 
-const HOME_WALLPAPER = '../assets/IMG_7456.GIF';
+const HOME_WALLPAPER = '..\\assets\\IMG_7456.GIF';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`${SITE_TITLE} - Research, Engineering & Technical Notes`} description="A personal blog about research, engineering workflows, and reproducible long-form writing.涵盖编程、技术笔记和工程实践。" />
+		<BaseHead title={`${SITE_TITLE} - Research, Engineering & Technical Notes`} description="A personal blog about research, engineering workflows, and reproducible long-form writing.记录生活。" />
 	</head>
 	<body>
 		<ParthenonColumns />
