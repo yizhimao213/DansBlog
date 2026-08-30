@@ -11,7 +11,7 @@ const { postSlug } = Astro.props;
 <section class="comments-section mt-12 border-t border-zinc-200 pt-8 dark:border-zinc-700">
 	<div class="mb-6 flex items-center gap-3">
 		<span class="h-px w-7 bg-gradient-to-r from-[rgb(180,126,36)] to-transparent dark:from-[rgb(226,190,110)]"></span>
-		<h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">Comments</h2>
+		<h2 class="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">评论</h2>
 		<span
 			data-comment-count
 			class="hidden rounded-full border border-zinc-200/80 bg-zinc-50/90 px-2.5 py-0.5 text-xs font-semibold text-zinc-500 dark:border-zinc-700/80 dark:bg-zinc-900/80 dark:text-zinc-400"
@@ -20,7 +20,7 @@ const { postSlug } = Astro.props;
 
 	<div id="comment-form-container" class="mt-6">
 		<!-- Show login prompt when not logged in -->
-		<div id="login-prompt" class="hidden">
+		<!-- <div id="login-prompt" class="hidden">
 			<div class="flex flex-col items-start gap-3 rounded-2xl border border-zinc-200/80 bg-white/70 p-5 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800/80 dark:bg-zinc-950/50">
 				<p class="m-0 text-sm text-zinc-600 dark:text-zinc-300">Join the conversation — sign in to leave a comment.</p>
 				<a
@@ -33,7 +33,7 @@ const { postSlug } = Astro.props;
 					Login with GitHub
 				</a>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Comment form - visible when logged in -->
 		<form id="comment-form" class="hidden space-y-3 rounded-2xl border border-zinc-200/80 bg-white/65 p-5 backdrop-blur-sm dark:border-zinc-800/80 dark:bg-zinc-950/45">
@@ -47,11 +47,11 @@ const { postSlug } = Astro.props;
 				name="content"
 				rows="4"
 				required
-				placeholder="Write a comment..."
+				placeholder="写评论..."
 				class="field-input resize-y leading-6"
 			></textarea>
 			<div class="flex items-center justify-between gap-3">
-				<p class="m-0 text-xs text-zinc-400 dark:text-zinc-500">Constructive only — reviewed by AI before display.</p>
+				<p class="m-0 text-xs text-zinc-400 dark:text-zinc-500">建设性评论 — 发布前由AI审核。</p>
 				<button
 					type="submit"
 					class="shrink-0 rounded-xl bg-zinc-900 px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(24,24,27,0.16)] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-zinc-700 active:translate-y-0 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
@@ -129,7 +129,7 @@ const { postSlug } = Astro.props;
 
 	const renderComment = (comment: CommentData, isReply = false): string => {
 		const userName = escapeHtml(comment.user?.name || comment.user?.login || 'Anonymous');
-		const avatarUrl = escapeHtml(comment.user?.avatarUrl || 'https://img.danarnoux.com/misc/DanArnoux.webp');
+		const avatarUrl = escapeHtml(comment.user?.avatarUrl || 'https://tc.ixoxi.cn/file/四时小路komichi/1788071097076_稿1.jpg');
 		const commentId = escapeHtml(comment.id);
 		const commentBody = escapeHtml(comment.content || comment.body || '');
 		const replyCount = comment.replies?.length || 0;
