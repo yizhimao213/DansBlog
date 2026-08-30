@@ -18,7 +18,7 @@ const posts = (await getCollection('blog'))
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 	.slice(0, 6);
 
-const HOME_WALLPAPER = '..\\assets\\IMG_7456.GIF';
+const HOME_WALLPAPER = '/img/IMG_7456.GIF';
 ---
 
 <!doctype html>
