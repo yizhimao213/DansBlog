@@ -14,5 +14,5 @@ typora-root-url: ./..\..\..\public\image
 
 记录生活、技术探讨~
 
-b站链接：[人快emo了]([https://](https://space.bilibili.com/212458030?spm_id_from=333.1007.0.0))
+b站链接：[人快emo了](https://space.bilibili.com/212458030?spm_id_from=333.1007.0.0)
 
